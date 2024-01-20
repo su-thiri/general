@@ -11,8 +11,8 @@ def crop_image(input_path, output_path, left, top, right, bottom):
     cropped_img.save(output_path)
 
 # Example usage:
-input_image_path = 'logo.jpg'
-output_image_path = 'IFC2data.jpg'
+input_image_path = 'logo_real.jpg'
+output_image_path = 'IFCdata123.jpg'
 
 # Define the coordinates of the area to be cropped (left, top, right, bottom)
 crop_coordinates = (0,1000,900,1300)

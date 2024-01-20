@@ -43,7 +43,7 @@ def crop_and_extract_text(input_path, output_path, left, top, right, bottom):
     print("Extracted Text:\n", extracted_text)
 
 # Example usage:
-input_image_path = 'test1.jpg'
+input_image_path = 'logo_real.jpg'
 output_image_path = 'progress.jpg'
 
 # Define the coordinates of the area to be cropped (left, top, right, bottom)
