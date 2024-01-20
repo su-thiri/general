@@ -25,8 +25,8 @@ def crop_image(input_path1,input_path2,output_path, left1, top1, right1, bottom1
     # Create a PDF and add the cropped image to it
     pdf_canvas = canvas.Canvas(output_path)
     pdf_canvas.drawImage(temp_image_path1,5,350, width=600, height=400)
-    pdf_canvas.drawImage(temp_image_path2,0,715,width=870, height=130)
-    pdf_canvas.drawImage(temp_image_path3,0,0,width=595, height=180)
+    pdf_canvas.drawImage(temp_image_path2,0,760,width=700,height=90)
+    pdf_canvas.drawImage(temp_image_path3,0,0,width=700, height=90)
 
      # Add text to the PDF
     pdf_canvas.setFont("Helvetica", 16)
@@ -44,7 +44,7 @@ def crop_image(input_path1,input_path2,output_path, left1, top1, right1, bottom1
 
 # Example usage:
 input_image_path1 = 'city.jpg'
-input_image_path2 = 'logo.jpg' 
+input_image_path2 = 'logo_real.jpg' 
 output_pdf_path ='pdf_extracted/testesttest.pdf'
 
 text1 = "Passenger Information"
@@ -52,8 +52,8 @@ text2 = "Flight Information"
 text3 = "Price"
 
 # Define the coordinates of the area to be cropped (left, top, right, bottom)
-crop_coordinates1 = (20, 220, 1250, 870)
-crop_coordinates2 = (0,10,900,180)
-crop_coordinates3 = (0,1000,900,1280)
+crop_coordinates1 = (20, 240, 1250, 870)
+crop_coordinates2 = (0,0,7500,780)
+crop_coordinates3 = (0,2300,7500,3450)
 
 crop_image(input_image_path1,input_image_path2, output_pdf_path, *crop_coordinates1,*crop_coordinates2,text1,text2,text3,*crop_coordinates3)
